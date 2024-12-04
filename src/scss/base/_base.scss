@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+/* font-family: "Urbanist", sans-serif; */
+@import "./mixin";
+
+body {
+  font-family: $font-main;
+  color: $white;
+  background-color: $dark;
+  font-size: 18px;
+  overflow-x: hidden !important;
+}
+
+a {
+  color: $white;
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+  &:hover {
+    color: $accent;
+  }
+}
+
+.none {
+  display: none;
+}
+
+.main {
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1596px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (max-width: 1596px) {
+    max-width: 100%;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+}
+
+p {
+  color: $grey;
+  font-weight: 500;
+}
+
+h2 {
+  font-family: $font-main;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 72px;
+  margin-bottom: 14px;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+}
+
+.btn {
+  padding: 14px 24px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  transition: 0.2s ease-in;
+  &:hover {
+    @include typicalBorder;
+  }
+
+  &--accent {
+    background-color: $accent;
+  }
+
+  &--learn-more {
+    border: 1px solid $dark-grey;
+    &:hover {
+      color: $accent;
+    }
+  }
+
+  &-row {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    gap: 20px;
+
+    @include mediaTablet {
+      display: flex;
+      font-size: 14px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+  }
+}

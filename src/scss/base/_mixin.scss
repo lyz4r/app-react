@@ -1,0 +1,11 @@
+@mixin typicalBorder {
+  border-radius: 10px;
+  background-color: $dark;
+  border: 1px solid $dark-grey;
+}
+
+@mixin mediaTablet {
+  @media screen and (max-width: $tablet) {
+    @content;
+  }
+}

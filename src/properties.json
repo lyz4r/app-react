@@ -1,0 +1,50 @@
+[
+    {
+      "name": "Seaside Serenity Villa",
+      "description": "A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood...",
+      "bedroom": 4,
+      "bathroom": 3,
+      "price": "550,000",
+      "imgName": "villa"
+    },
+    {
+      "name": "Metropolatan Haven",
+      "description": "A chic and fully-furnished 2-bedroom apartment with panoramic city views...",
+      "bedroom": 2,
+      "bathroom": 2,
+      "price": "450,000",
+      "imgName": "haven"
+    },
+    {
+      "name": "Rustic Retreat Cottage",
+      "description": "An elegant 3-bedroom, 2.5-bathroom townhouse in a gated community...",
+      "bedroom": 3,
+      "bathroom": 3,
+      "price": "450,000",
+      "imgName": "cottage"
+    },
+    {
+      "name": "Metropolatan Haven",
+      "description": "A chic and fully-furnished 2-bedroom apartment with panoramic city views...",
+      "bedroom": 2,
+      "bathroom": 2,
+      "price": "450,000",
+      "imgName": "haven"
+    },
+    {
+      "name": "Rustic Retreat Cottage",
+      "description": "An elegant 3-bedroom, 2.5-bathroom townhouse in a gated community...",
+      "bedroom": 3,
+      "bathroom": 3,
+      "price": "450,000",
+      "imgName": "cottage"
+    },
+    {
+      "name": "Seaside Serenity Villa",
+      "description": "A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood...",
+      "bedroom": 4,
+      "bathroom": 3,
+      "price": "550,000",
+      "imgName": "villa"
+    }    
+  ]

@@ -1,0 +1,54 @@
+.page-sw__cur-page {
+  color: $white;
+}
+
+.page-sw__pages {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.page-sw {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  padding-top: 20px;
+  margin-top: 50px;
+  border-top: 1px solid $dark-grey;
+
+  @include mediaTablet {
+    display: none;
+  }
+}
+
+.page-sw__switch {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.switch {
+  @include typicalBorder;
+  width: 58px;
+  height: 58px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in;
+
+  border-radius: 50%;
+  background-color: $dark-grey;
+
+  &--disabled {
+    cursor: default;
+    background-color: $dark;
+    opacity: 0.5;
+  }
+}
+
+.switch:not(.switch--disabled):hover {
+  background-color: $grey;
+}

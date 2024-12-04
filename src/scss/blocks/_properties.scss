@@ -1,0 +1,153 @@
+.stars {
+  position: relative;
+  left: -25px;
+
+  @include mediaTablet {
+    left: 0;
+  }
+}
+
+.properties {
+  margin-top: 150px;
+  margin-bottom: 150px;
+
+  @include mediaTablet {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
+
+.properties__top {
+  margin-bottom: 80px;
+}
+
+.properties__card {
+  max-width: 512px;
+  @include typicalBorder;
+
+  @include mediaTablet {
+    width: 100%;
+  }
+}
+
+.card__container {
+  padding: 40px;
+}
+
+.card__cost {
+  color: $white;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+
+  @include mediaTablet {
+    font-size: 20px;
+  }
+}
+
+.card__img {
+  border-radius: 10px;
+}
+
+.card__facilities {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  @include mediaTablet {
+    display: grid;
+  }
+}
+
+.card__facility {
+  padding: 8px 14px 8px 14px;
+  background-color: $dark-grey;
+  border-radius: 28px;
+
+  display: flex;
+  align-items: center;
+
+  &::before {
+    margin-right: 4px;
+  }
+}
+
+.card__description {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  gap: 6px;
+  margin-bottom: 30px;
+
+  &-read-more {
+    text-decoration: underline !important;
+  }
+}
+
+.card__bedroom {
+  &::before {
+    content: url("../img/properties/bedroom.svg");
+  }
+}
+.card__bathroom {
+  &::before {
+    content: url("../img/properties/bathroom.svg");
+  }
+}
+.card__villa {
+  &::before {
+    content: url("../img/properties/villa.svg");
+  }
+}
+
+.card__footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card__footer-btn {
+  height: 63px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+
+  @include mediaTablet {
+    font-size: 14px;
+    width: 30vw;
+  }
+}
+
+.properties__card-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.properties__top-bot {
+  display: flex;
+  justify-content: space-between;
+
+  @include mediaTablet {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+.properties_view-all {
+  @include typicalBorder;
+  height: 63px;
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    color: $accent;
+  }
+
+  @include mediaTablet {
+  }
+}

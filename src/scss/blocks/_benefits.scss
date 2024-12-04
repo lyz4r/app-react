@@ -1,0 +1,40 @@
+.benefits__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 4fr));
+  gap: 20px;
+
+  padding: 20px;
+  align-items: center;
+
+  border: $dark-grey solid 1px;
+}
+
+.benefit {
+  @include typicalBorder;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  align-items: center;
+
+  &:hover .benefit__img {
+    transform: scale(1.1);
+  }
+}
+
+.benefit__span {
+  width: 415px;
+  font-weight: 600;
+  padding: 20px 0px 40px 0px;
+  text-align: center;
+}
+
+.arrow {
+  height: 34px;
+  align-self: flex-end;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.benefit__img {
+  height: 82px;
+}

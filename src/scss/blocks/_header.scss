@@ -1,0 +1,109 @@
+@import "../base/mixin";
+
+h1 {
+  padding-top: 144px;
+  margin-bottom: 24px;
+
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 72px;
+
+  @include mediaTablet {
+    padding-top: 50px;
+    font-size: 40px;
+    line-height: normal;
+  }
+}
+
+.header__main {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  margin-right: 0;
+  max-width: 1788px;
+
+  @include mediaTablet {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+}
+
+.header__container {
+  &--right {
+    background: linear-gradient(
+        238.21deg,
+        #2a213f 8.76%,
+        rgba(25, 25, 25, 0) 50.09%
+      ),
+      url("../img/abstract-design.png");
+    margin-right: 0;
+    margin-left: auto;
+  }
+
+  @include mediaTablet {
+  }
+}
+
+.header__cards-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(229px, 3fr));
+  gap: 20px;
+
+  @include mediaTablet {
+    grid-template-columns: repeat(auto-fit, minmax(70vw, 3fr));
+    margin-bottom: 50px;
+  }
+}
+
+.header__card {
+  display: grid;
+
+  padding: 24px 16px;
+  gap: 2px;
+
+  @include typicalBorder;
+  background-color: $header-color;
+}
+
+.card__num {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60px;
+}
+
+.card__span {
+  font-weight: 500;
+  color: $grey;
+  width: 191.33px;
+}
+
+.header__skyscaper {
+  width: 920px;
+  height: 814px;
+  @include mediaTablet {
+    display: none;
+  }
+}
+
+.header__round {
+  position: absolute;
+  left: 47%;
+  top: 250px;
+  animation: roundRotate 2s cubic-bezier(0.215, 0.3, 0.1, 0.4) 0s 3 alternate
+    none;
+  transform: rotate(0deg);
+  transition: all 1s ease-in;
+
+  @include mediaTablet {
+    display: none;
+  }
+}
+
+@keyframes roundRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

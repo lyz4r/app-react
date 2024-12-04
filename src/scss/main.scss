@@ -1,0 +1,20 @@
+/* base */
+
+@import "base/reset";
+@import "base/vars";
+@import "base/base";
+
+/* blocks */
+@import "blocks/header";
+@import "blocks/header-top";
+@import "blocks/benefits";
+@import "blocks/properties";
+@import "blocks/reviews";
+@import "blocks/page-switch";
+@import "blocks/cta";
+@import "blocks/footer-main";
+@import "blocks/footer-bottom";
+@import "blocks/nav-icon";
+
+/* mixins */
+@import "base/mixin";

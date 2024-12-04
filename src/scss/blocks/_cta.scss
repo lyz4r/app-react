@@ -1,0 +1,47 @@
+.cta {
+  overflow: hidden;
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  @include typicalBorder;
+}
+
+.cta__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+
+  @include mediaTablet {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+.cta__content-text {
+  z-index: 2;
+}
+
+.cta__explore {
+  z-index: 2;
+}
+
+.cta__abs-bg-l,
+.cta__abs-bg-r {
+  position: absolute;
+
+  bottom: 0;
+  width: 50%;
+  height: 65%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.cta__abs-bg-l {
+  left: 0;
+}
+
+.cta__abs-bg-r {
+  right: -5%;
+}
